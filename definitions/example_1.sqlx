@@ -1,0 +1,15 @@
+/* 
+
+* Operations can be used to run custom SQL that doesn't necessarily fit into the model of publishing a dataset or writing an assertion
+
+* You can define multiple statements by separating them with a single line containing only 3 dashes ---
+
+* resolve("table_name") returns the fully qualified name of the table
+
+* Learn more on https://docs.dataform.co/how-to-guides/operations
+
+*/
+
+-- The default file type is operation, so a config { } block is not required
+
+SELECT * FROM `bigquery-public-data.ml_datasets.census_adult_income` LIMIT 1000
