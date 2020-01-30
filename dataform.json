@@ -1,5 +1,5 @@
 {
-    "defaultSchema": "dataform_faiyaz",
+    "defaultSchema": "dataform_bq_ml",
     "assertionSchema": "dataform_assertions",
     "warehouse": "bigquery",
     "gcloudProjectId": "tada-analytics"

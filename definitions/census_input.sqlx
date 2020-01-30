@@ -1,6 +1,4 @@
-config {
-  type: 'table'
-}
+config { type: "table" }
 
 SELECT
   age,
