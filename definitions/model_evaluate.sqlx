@@ -1,0 +1,15 @@
+config { name: 'evaluation', hasOutput: true}
+
+SELECT
+  *
+FROM
+  ML.EVALUATE (MODEL ${ref('bq_model')},
+    (
+    SELECT
+      *
+    FROM
+      ${ref('census_input')}
+    WHERE
+      dataframe = 'evaluation'
+    )
+  )

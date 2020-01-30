@@ -1,0 +1,15 @@
+config { type: 'table'}
+
+SELECT
+  *
+FROM
+  ML.PREDICT (MODEL ${ref('bq_model')},
+    (
+    SELECT
+      *
+    FROM
+      ${ref('census_input')}
+    WHERE
+      dataframe = 'prediction'
+     )
+  )
