@@ -1,4 +1,4 @@
-config { hasOutput: true, name: 'bq_model' }
+config { type: 'operations', hasOutput: true, name: 'bq_model' }
 
 CREATE OR REPLACE MODEL
   ${self()}
