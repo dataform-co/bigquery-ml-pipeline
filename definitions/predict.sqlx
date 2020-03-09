@@ -1,4 +1,4 @@
-config { type: 'table'}
+config { type: 'table', dependencies: ['model_evaluate']}
 
 SELECT
   *

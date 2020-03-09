@@ -1,4 +1,7 @@
-config { type: "table" }
+config {
+  type: "table",
+  name: "census_input"
+}
 
 SELECT
   age,
