@@ -7,7 +7,7 @@ SELECT
   *
 FROM
   ML.PREDICT (
-    MODEL ${ref('bq_model')},
+    MODEL ${ref('model_train')},
     (
       SELECT
         *

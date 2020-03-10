@@ -1,7 +1,6 @@
 config {
   type: 'operations',
-  hasOutput: true,
-  name: 'bq_model'
+  hasOutput: true
 }
 
 CREATE

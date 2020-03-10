@@ -1,6 +1,5 @@
 config {
-  type: "table",
-  name: "census_input"
+  type: "table"
 }
 
 SELECT

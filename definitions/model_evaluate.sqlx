@@ -1,6 +1,5 @@
 config {
   type: 'table',
-  name: 'model_evaluate',
   assertions: {
     rowConditions: [
       'accuracy > .80'
@@ -12,7 +11,7 @@ SELECT
   *
 FROM
   ML.EVALUATE (
-    MODEL ${ref('bq_model')},
+    MODEL ${ref('model_train')},
     (
       SELECT
         *
