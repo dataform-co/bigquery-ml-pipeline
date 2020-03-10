@@ -5,6 +5,7 @@ config {
       'accuracy > .80'
     ]
   }
+  tags: ["evaluate"]
 }
 
 SELECT

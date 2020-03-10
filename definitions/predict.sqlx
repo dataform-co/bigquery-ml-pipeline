@@ -1,6 +1,7 @@
 config {
   type: 'table',
-  dependencies: ['model_evaluate']
+  dependencies: ['model_evaluate'],
+  tags: ["predict"]
 }
 
 SELECT
