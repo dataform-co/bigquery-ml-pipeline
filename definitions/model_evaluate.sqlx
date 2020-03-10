@@ -1,10 +1,5 @@
 config {
-  type: 'table',
-  assertions: {
-    rowConditions: [
-      'accuracy > .80'
-    ]
-  }
+  type: 'assertion',
   tags: ["evaluate"]
 }
 
@@ -22,3 +17,4 @@ FROM
         dataframe = 'evaluation'
     )
   )
+WHERE accuracy < .80
